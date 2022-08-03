@@ -28,4 +28,8 @@ public class EnvReader {
     public static Integer getPort(){
        return Integer.parseInt(properties.getProperty("port"));
     }
+
+    public static Integer getPortSecured(){
+        return Integer.parseInt(properties.getProperty("portSecured"));
+    }
 }

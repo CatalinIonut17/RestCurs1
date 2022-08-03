@@ -10,25 +10,25 @@ public class Pet {
     private String name;
     private String birthDate;
     private Owner owner;
-    private PetType type;
+    private Type type;
 
     public Pet() {
     }
 
-    public Pet(String name, String birthDate, Owner owner, PetType type) {
+    public Pet(String name, String birthDate) {
         this.name = name;
         this.birthDate = birthDate;
-        this.owner = owner;
-        this.type = type;
+
     }
 
-    public Pet(Integer id, String name, String birthDate, Owner owner, PetType type) {
+    public Pet(Integer id, String name, String birthDate, Owner owner, Type type) {
         this.id = id;
         this.name = name;
         this.birthDate = birthDate;
         this.owner = owner;
         this.type = type;
     }
+
 
     public Integer getId() {
         return id;
@@ -62,11 +62,11 @@ public class Pet {
         this.owner = owner;
     }
 
-    public PetType getType() {
+    public Type getType() {
         return type;
     }
 
-    public void setType(PetType type) {
+    public void setType(Type type) {
         this.type = type;
     }
 

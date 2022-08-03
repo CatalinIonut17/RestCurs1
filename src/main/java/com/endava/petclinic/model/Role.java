@@ -2,14 +2,14 @@ package com.endava.petclinic.model;
 
 import java.util.Objects;
 
-public class PetType {
+public class Role {
     private Integer id;
     private String name;
 
-    public PetType() {
+    public Role() {
     }
 
-    public PetType(String name) {
+    public Role(String name) {
         this.name = name;
     }
 
@@ -32,9 +32,9 @@ public class PetType {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof PetType)) return false;
-        PetType petType = (PetType) o;
-        return Objects.equals(name, petType.name);
+        if (!(o instanceof Role)) return false;
+        Role role = (Role) o;
+        return Objects.equals(name, role.name);
     }
 
     @Override
@@ -44,7 +44,7 @@ public class PetType {
 
     @Override
     public String toString() {
-        return "PetType{" +
+        return "Role{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
